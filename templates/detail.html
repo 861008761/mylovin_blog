@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% include "navigation.html" %}
+
+<!--<h1>{{ article.title }}</h1>-->
+<!--<ul>-->
+<!--<li>{{ article.category }}</li>-->
+<!--<li>{{ article.date_time }}</li>-->
+<!--<li>{{ article.content }}</li>-->
+<!--</ul>-->
+
+<div class="view">
+    <div class="jumbotron" contenteditable="true">
+        <h2>{{ article.title }}</h2>
+        <p>
+            {{ article.content }}
+        </p>
+        <p class="text-right text-muted">{{ article.date_time }}</p>
+    </div>
+</div>
+
+{% endblock %}
